@@ -6,5 +6,5 @@ primary:
     enabled: true
     runAsUser: 0
   persistence:
-    storageClass: csi-hostpath-sc
+    storageClass: longhorn
     size: 1Gi
