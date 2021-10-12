@@ -47,3 +47,10 @@ kubectl -n longhorn-system get pod
 ```
 ref: https://longhorn.io/docs/1.2.2/deploy/accessing-the-ui/
 ```
+
+### 7.Config
+```
+In Longhorn UI: Setting > General
+  set Default Replica Count=1
+  save
+```

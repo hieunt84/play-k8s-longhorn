@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: longhorn
+  annotations:
+    kubernetes.io/ingress.class: ambassador
+spec:
+  rules:
+  - host: longhorn.hit.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          serviceName: longhorn-frontend
+          servicePort: 80
