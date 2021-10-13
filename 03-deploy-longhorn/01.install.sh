@@ -1,4 +1,5 @@
 #!/bin/sh
+#Ref: https://longhorn.io/docs/1.1.0/deploy/install/install-with-helm/
 
 # 1. Add the Longhorn Helm repository
 helm repo add longhorn https://charts.longhorn.io

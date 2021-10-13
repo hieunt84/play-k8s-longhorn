@@ -1,19 +1,11 @@
 ### Ref
 ```
-https://longhorn.io/docs/1.2.2/deploy/install/install-with-helm/
+https://longhorn.io/docs/1.1.0/deploy/install/#installation-requirements
 ```
 
 ## Installation Requirements
 ### Installing open-iscsi
-```
-kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.2/deploy/prerequisite/longhorn-iscsi-installation.yaml
-```
-
 ### Installing NFSv4 client
-```
-kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.2/deploy/prerequisite/longhorn-nfs-installation.yaml
-
-```
 
 ## Install with Helm
 
@@ -30,7 +22,6 @@ helm repo update
 ### 3. To install Longhorn with Helm 3, use these commands:
 ```
 kubectl create namespace longhorn-system
-helm install longhorn longhorn/longhorn --namespace longhorn-system
 ```
 
 ### 4. To confirm that the deployment succeeded, run:

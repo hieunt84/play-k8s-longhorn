@@ -1,11 +1,8 @@
 #!/bin/sh
-
-# Creat ns longhorn
-kubectl create ns longhorn-system
-kubectl config set-context --current --namespace longhorn-system
+# Ref: https://longhorn.io/docs/1.1.0/deploy/install/#installation-requirements
 
 # 1. Installing open-iscsi
-kubectl apply --namespace longhorn-system -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.2/deploy/prerequisite/longhorn-iscsi-installation.yaml
+yum install iscsi-initiator-utils
 
 # 2. Installing NFSv4 client
-kubectl apply --namespace longhorn-system -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.2/deploy/prerequisite/longhorn-nfs-installation.yaml
+yum install nfs-utils -y
