@@ -5,10 +5,10 @@ https://longhorn.io/docs/1.2.2/snapshots-and-backups/csi-snapshot-support/enable
 
 ### Step 1
 ```
-kubectl apply -f ./crd --namespace default
+kubectl apply -f ./01-crd
 ```
 
 ### Step 2
 ```
-kubectl create -f ./snapshot-controller
+kubectl create -f ./02-snapshot-controller
 ```
